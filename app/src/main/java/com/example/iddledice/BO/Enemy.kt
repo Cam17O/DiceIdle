@@ -1,5 +1,8 @@
 package com.example.iddledice.BO
 
-class Enemy(name: String) : Entity(name) {
+class Enemy(
+    id: Int,
+    name: String)
+    : Entity(id, name) {
 
 }

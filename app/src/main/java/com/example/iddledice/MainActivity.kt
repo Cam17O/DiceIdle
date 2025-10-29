@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.example.iddledice.BO.Player
 import com.example.iddledice.ui.theme.IddleDiceTheme
 import com.example.iddledice.ui.layout.DiceLaunch
 
@@ -19,6 +20,12 @@ class MainActivity : ComponentActivity() {
             IddleDiceTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     DiceLaunch(
+                        player = Player(
+                            id = 1,
+                            name = "joueur",
+                            expLvl = 1,
+                            point = 1
+                        ),
                         Modifier.padding(innerPadding)
                     )
                 }
