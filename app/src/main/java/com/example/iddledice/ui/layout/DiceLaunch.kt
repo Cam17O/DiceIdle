@@ -14,10 +14,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.iddledice.BO.Player
 import kotlin.random.Random
 
 @Composable
-fun DiceLaunch(modifier: Modifier = Modifier) {
+fun DiceLaunch(player: Player, modifier: Modifier = Modifier) {
     var diceValue by rememberSaveable { mutableStateOf(1) }
     var total by rememberSaveable { mutableStateOf(0) }
     var upgradeLevel by rememberSaveable { mutableStateOf(0) }
