@@ -1,0 +1,55 @@
+{
+  "Dice": [
+    {
+      "id": "basic_dice",
+      "name": "Dé de base",
+      "faces": [1, 2, 3, 4, 5, 6],
+      "color": "#FFFFFF",
+      "rarity": "common",
+      "description": "Un dé classique à 6 faces.",
+      "bonus": {
+        "critical_chance": 0.0,
+        "extra_points": 0
+      }
+    },
+    {
+      "id": "gold_dice",
+      "name": "Dé doré",
+      "faces": [2, 3, 4, 5, 6, 7, 8],
+      "color": "#FFD700",
+      "rarity": "rare",
+      "description": "Un dé rare, plus généreux en points.",
+      "bonus": {
+        "critical_chance": 0.05,
+        "extra_points": 2
+      }
+    }
+  ],
+
+  "Upgrades": [
+    {
+      "id": "upgrade_dice_power",
+      "name": "Puissance du dé",
+      "description": "Augmente le nombre de faces du dé.",
+      "level": 0,
+      "max_level": 10,
+      "base_cost": 10,
+      "cost_multiplier": 2.0,
+      "effect": {
+        "extra_faces_per_level": 1
+      }
+    },
+    {
+      "id": "upgrade_multi_dice",
+      "name": "Nombre de dés",
+      "description": "Permet de lancer plusieurs dés simultanément.",
+      "level": 0,
+      "max_level": 5,
+      "base_cost": 50,
+      "cost_multiplier": 3.0,
+      "effect": {
+        "extra_dice_per_level": 1
+      }
+    }
+  ]
+}
