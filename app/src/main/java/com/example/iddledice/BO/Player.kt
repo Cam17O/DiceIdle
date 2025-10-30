@@ -1,10 +1,12 @@
 package com.example.iddledice.BO
 
+import com.example.iddledice.bo.Entity
+
 class Player(
     id: Int,
     name: String,
     var expLvl: Int,
-    var point: Int
+    var gold: Int
 ) : Entity(id, name) {
 
     fun launchDice(): Int {
